@@ -4,9 +4,16 @@ import java.util.List;
 
 public class IsSubsequenceSolution {
  public boolean isSubsequence(String s, String t) {
-     
-        return false;
-    }   
+     int is = 0;
+     int it = 0;
+     while (it < t.length() && is < s.length()) {
+         if (t.charAt(it) == s.charAt(is)) {
+             is++;
+         }
+         it++;
+     }
+     return is == s.length();
+ }
  
  public boolean isSubsequenceIntArray(List<Integer> array, List<Integer> sequence) {
      int arrI = 0;

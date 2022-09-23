@@ -1,10 +1,10 @@
 package org.sam.algo.issubsequence;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.util.Arrays;
 
 import static org.testng.Assert.assertEquals;
 
@@ -27,7 +27,7 @@ public class IsSubsequenceSolutionTest {
     
     @Test(dataProvider = "test1")
     public void isSubsequence(String t,String s, boolean expected) {
-        boolean val = solution.isSubsequence(t,s);
+        boolean val = solution.isSubsequence(s, t);
         assertEquals(val, expected);
     }
     
