@@ -2,7 +2,8 @@ package org.sam.algo.twosum;
 
 import java.util.HashMap;
 
-public class TwoSumSolution {
+public class TwoSumIndicesSolution {
+
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -15,4 +16,5 @@ public class TwoSumSolution {
         }
         return null;
     }
+
 }

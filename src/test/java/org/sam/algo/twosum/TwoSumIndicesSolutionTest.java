@@ -1,0 +1,30 @@
+package org.sam.algo.twosum;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+
+public class TwoSumIndicesSolutionTest {
+    TwoSumIndicesSolution solution;
+
+    @BeforeClass
+    public void setUp() {
+        solution = new TwoSumIndicesSolution();
+    }
+
+    @DataProvider(name = "test1")
+    public Object[][] createData1() {
+        return new Object[][]{
+                new Object[]{new int[]{2, 7, 11, 15}, 9, new int[]{0, 1}},
+                new Object[]{new int[]{3, 2, 4}, 6, new int[]{1, 2}},
+                new Object[]{new int[]{3, 3}, 6, new int[]{0, 1}},
+        };
+    }
+
+    @Test(dataProvider = "test1")
+    public void testTwoSum(int[] arr, int target, int[] expected) {
+        assertEquals(solution.twoSum(arr, target), expected);
+    }
+}
