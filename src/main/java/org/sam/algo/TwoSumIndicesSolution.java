@@ -1,4 +1,4 @@
-package org.sam.algo.twosum;
+package org.sam.algo;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package org.sam.algo.containsduplicate;
+package org.sam.algo;
 
 import java.util.Arrays;
 import java.util.HashSet;

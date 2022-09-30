@@ -1,4 +1,4 @@
-package org.sam.algo.issubsequence;
+package org.sam.algo;
 
 import java.util.List;
 

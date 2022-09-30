@@ -1,4 +1,4 @@
-package org.sam.algo.containsduplicate;
+package org.sam.algo;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;

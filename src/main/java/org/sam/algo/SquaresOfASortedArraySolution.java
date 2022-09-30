@@ -1,4 +1,4 @@
-package org.sam.algo.squaresofasortedarray;
+package org.sam.algo;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package org.sam.algo.isanagram;
+package org.sam.algo;
 
 import java.util.Arrays;
 import java.util.HashMap;
