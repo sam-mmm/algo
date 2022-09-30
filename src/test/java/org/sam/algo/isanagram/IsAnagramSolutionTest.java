@@ -23,11 +23,12 @@ public class IsAnagramSolutionTest {
     }
 
     @Test(dataProvider = "test1")
-    public void testContainsDuplicate1(String s, String t, boolean expected) {
-        assertEquals(solution.isAnagram(s, t), expected);
+    public void testIsAnagram1(String s, String t, boolean expected) {
+        assertEquals(solution.isAnagram1(s, t), expected);
     }
-//    @Test(dataProvider = "test1")
-//    public void testContainsDuplicate2(int[] nums,boolean expected) {
-//        assertEquals(solution.containsDuplicate2(nums),expected);
-//    }
+
+    @Test(dataProvider = "test1")
+    public void testIsAnagram2(String s, String t, boolean expected) {
+        assertEquals(solution.isAnagram2(s, t), expected);
+    }
 }
