@@ -1,0 +1,32 @@
+package org.sam.algo;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+
+public class FindPivotIndexSolutionTest {
+
+    FindPivotIndexSolution solution;
+
+    @BeforeClass
+    public void setUp() {
+        solution = new FindPivotIndexSolution();
+    }
+
+    @DataProvider(name = "test1")
+    public Object[][] createData1() {
+        return new Object[][]{
+                new Object[]{new int[]{1, 7, 3, 6, 5, 6}, 3},
+                new Object[]{new int[]{1, 2, 3}, -1},
+                new Object[]{new int[]{2, 1, -1}, 0},
+
+        };
+    }
+
+    @Test(dataProvider = "test1")
+    public void testPivotIndex(int[] nums, int expected) {
+        assertEquals(solution.pivotIndex(nums), expected);
+    }
+}
