@@ -13,14 +13,14 @@ public class NextGreaterElement1Solution {
         }
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < nums2.length; i++) {
-            int curr = nums2[i];
-            while (!stack.empty() && curr > stack.peek()) {
+            int cur = nums2[i];
+            while (!stack.empty() && cur > stack.peek()) {
                 int val = stack.pop();
                 int idx = map.get(val);
-                ans[idx] = curr;
+                ans[idx] = cur;
             }
-            if (map.containsKey(curr)) {
-                stack.push(curr);
+            if (map.containsKey(cur)) {
+                stack.push(cur);
             }
         }
         return ans;
