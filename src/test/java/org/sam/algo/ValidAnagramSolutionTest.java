@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class IsAnagramSolutionTest {
-    IsAnagramSolution solution;
+public class ValidAnagramSolutionTest {
+    ValidAnagramSolution solution;
 
     @BeforeClass
     public void setUp() {
-        solution = new IsAnagramSolution();
+        solution = new ValidAnagramSolution();
     }
 
     @DataProvider(name = "test1")

@@ -3,7 +3,7 @@ package org.sam.algo;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class IsAnagramSolution {
+public class ValidAnagramSolution {
     public boolean isAnagram1(String s, String t) {
         if (s.length() != t.length()) return false;
 
@@ -33,13 +33,13 @@ public class IsAnagramSolution {
     }
 
     public boolean isAnagram2(String s, String t) {
-        char[] arrS = s.toCharArray();
-        Arrays.sort(arrS);
-        String sortedS = Arrays.toString(arrS);
+        char[] sc = s.toCharArray();
+        Arrays.sort(sc);
+        s = String.valueOf(sc);
+        char[] st = t.toCharArray();
+        Arrays.sort(st);
+        t = String.valueOf(st);
 
-        char[] arrT = t.toCharArray();
-        Arrays.sort(arrT);
-        String sortedT = Arrays.toString(arrT);
-        return sortedS.equalsIgnoreCase(sortedT);
+        return s.contentEquals(t);
     }
 }
