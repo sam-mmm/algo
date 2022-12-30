@@ -1,4 +1,6 @@
-package org.sam.algo;
+package org.sam.algo.seventyfive;
+
+import org.sam.algo.ListNode;
 
 public class ReverseLinkedListSolution {
     public ListNode reverseList(ListNode head) {

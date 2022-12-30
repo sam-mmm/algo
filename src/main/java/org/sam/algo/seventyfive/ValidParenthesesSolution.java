@@ -1,4 +1,4 @@
-package org.sam.algo;
+package org.sam.algo.seventyfive;
 
 import java.util.Stack;
 

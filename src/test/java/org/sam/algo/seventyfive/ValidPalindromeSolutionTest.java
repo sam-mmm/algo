@@ -1,4 +1,4 @@
-package org.sam.algo;
+package org.sam.algo.seventyfive;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;

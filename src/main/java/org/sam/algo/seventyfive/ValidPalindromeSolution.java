@@ -1,4 +1,4 @@
-package org.sam.algo;
+package org.sam.algo.seventyfive;
 
 public class ValidPalindromeSolution {
     public boolean isPalindrome(String s) {

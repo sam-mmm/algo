@@ -1,10 +1,10 @@
-package org.sam.algo;
+package org.sam.algo.seventyfive;
 
+import org.sam.algo.ListNode;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.assertEquals;
 
 public class ReverseLinkedListSolutionTest {
 
@@ -27,7 +27,7 @@ public class ReverseLinkedListSolutionTest {
 
     @Test(dataProvider = "test1")
     public void testReverseList(Integer[] head, Integer[] expected) {
-        assertEquals(ListNode.array(solution.reverseList(ListNode.node(head))), expected);
+        Assert.assertEquals(ListNode.array(solution.reverseList(ListNode.node(head))), expected);
     }
 
 }
